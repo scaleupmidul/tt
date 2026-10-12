@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "GEP-5 Gold Setup Monitor (Strict EA Integrity)",
+  "version": "1.0.0",
+  "description": "Displays authoritative GEP-5 signals directly from MetaTrader 5 with strict fail-closed dual validation.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GEP-5 Gold Setup Monitor"
+  },
+  "permissions": [
+    "notifications",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*",
+    "http://localhost:3000/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

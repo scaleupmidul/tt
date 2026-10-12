@@ -1,0 +1,4 @@
+# GEP-5 Python Requirements
+# Note: MetaTrader5 is official MetaQuotes Windows library (requires 64-bit Python 3.8 - 3.12 on Windows)
+# On Windows, pip installs MetaTrader5. On Linux / Vercel cloud environments, pip skips it safely.
+MetaTrader5>=5.0.45; sys_platform == 'win32'

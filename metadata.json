@@ -1,0 +1,8 @@
+{
+  "name": "Remix GEP-5 Gold Setup Detection System",
+  "description": "Manual-trading assistance tool for XAU/USD. Live setup formation progress, deterministic condition evaluation, and MT5 market-data connector.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

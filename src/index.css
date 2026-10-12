@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Responsive PC / Desktop typography scaling for better legibility */
+  @media (min-width: 1024px) {
+    html:not([data-text-scale]) {
+      font-size: 17.5px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    html:not([data-text-scale]) {
+      font-size: 18.5px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    html:not([data-text-scale]) {
+      font-size: 19.5px;
+    }
+  }
+
+  /* User-selected display zoom scales */
+  html[data-text-scale="standard"] {
+    font-size: 16px !important;
+  }
+
+  html[data-text-scale="large"] {
+    font-size: 18.5px !important;
+  }
+
+  html[data-text-scale="xlarge"] {
+    font-size: 21px !important;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars for trading panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
